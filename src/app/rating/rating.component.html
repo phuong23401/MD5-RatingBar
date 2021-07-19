@@ -1,0 +1,7 @@
+<h1>Rating bar!</h1>
+{{current}}
+<div class="rating-bar">
+  <div class="rating-unit" [class.active]="item.active" *ngFor="let item of ratingList; index as i"
+       (click)="mouseClick(i)"
+       (mouseenter)="mouseHover(i)">{{item.value}}</div>
+</div>
